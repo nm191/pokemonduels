@@ -21,7 +21,7 @@ $(document).ready(function(){
                     hidden_formname: hidden_formname
             }
         }).done(function(data){
-            console.log(data);
+            $('.register-container').html(data);
         });
     });
 

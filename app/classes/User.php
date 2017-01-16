@@ -69,9 +69,11 @@ class User
     }
 
     public function updateTimeStamp($user_id){
-        $sql = 'UPDATE users SET timestamp = CURRENT_TIMESTAMP WHERE id = :id';
+        $timestamp = date('Y-m-d H:i:s');
+        $sql = 'UPDATE users SET timestamp = :timestamp WHERE id = :id';
         $stmt = $this->db->pdo->prepare($sql);
         $stmt->bindParam(':id', $user_id);
+        $stmt->bindParam(':timestamp', $timestamp);
         return $stmt->execute();
     }
 
@@ -91,11 +93,25 @@ class User
         $return_ar[] = '<ul class="list-group">';
         foreach($online_users_ar as $user){
             $tmp_item_ar = array();
-            $tmp_item_ar[] = ' <li class="list-group-item">'.$user->username.'</li>';
+            $tmp_item_ar[] = '<li class="list-group-item"><a data-toggle="collapse" href="#collapse'.$user->username.'" aria-expanded="true" aria-controls="collapse1">'.$user->username.'</a></li>';
+            if($_SESSION['user_info']->id != $user->id){
+                $tmp_item_ar[] = '<ul id="collapse'.$user->username.'" class="collapse">';
+                $tmp_item_ar[] = '<li class="list-group-item challenge" data-id="'.$user->id.'">Challenge!</li>';
+            }
+            $tmp_item_ar[] = '</ul>';
             $return_ar[] = implode('', $tmp_item_ar);
         }
         $return_ar[] = '</ul>';
 
         return implode('', $return_ar);
+    }
+
+    public function logout($user_id){
+        $sql = 'UPDATE users SET timestamp = NULL WHERE id = :id';
+        $stmt = $this->db->pdo->prepare($sql);
+        $stmt->bindParam(':id', $user_id);
+        $stmt->execute();
+        session_destroy();
+        return $this->redirect('index.php');
     }
 }

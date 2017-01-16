@@ -8,6 +8,5 @@
 
 require_once ('../app/init.php');
 
-session_destroy();
+$user->logOut($_SESSION['user_info']->id);
 
-$user->redirect('index.php');

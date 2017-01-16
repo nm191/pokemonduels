@@ -10,5 +10,7 @@
 <script src="assets/js/PokemonService.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/register.js"></script>
+<script src="assets/js/chat.js"></script>
+<script src="assets/js/notifications.js"></script>
 </body>
 </html>

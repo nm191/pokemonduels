@@ -1,0 +1,20 @@
+.chat-text-other, .chat-text-self{
+    width: 100%;
+    display: block;
+}
+.chat-container{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+body{
+    background: #ECEEEF;
+}
+
+.notification{
+    position: absolute;
+    width: 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}

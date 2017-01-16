@@ -14,10 +14,11 @@ if(isset($_POST['hidden_formname'])){
 
 switch($formname){
     case 'register':
+
         //check if all fields are filled
         $required_ar = array('email', 'username', 'password', 'password_confirm');
-        foreach($required_ar  as $field_name){
-           if(!array_key_exists($field_name, $_POST)){
+        foreach($required_ar  as &$field_name){
+           if(empty($POST[$field_name])){
                die('Not all fields all filled in');
            }
         }
@@ -33,7 +34,7 @@ switch($formname){
         }
 
         //check if passwords are the same
-        if($_POST['password'] !== $_POST['password_confirm']){
+        if($_POST['password'] != $_POST['password_confirm']){
             die('Passwords do not match');
         }
 

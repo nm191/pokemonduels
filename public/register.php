@@ -13,7 +13,7 @@ require_once ('includes/header.php');
             <div class="jumbotron jumbotron-fluid">
                 <div class="container text-sm-center">
                     <h1 class="display-3">Register an account</h1>
-                    <div class="col-sm-8 offset-sm-2">
+                    <div class="col-sm-8 offset-sm-2 register-container">
                         <form>
                             <div class="form-group">
                                 <label for="txtEmail">Email address</label>
