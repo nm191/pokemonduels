@@ -14,6 +14,15 @@ class Notifications
         $this->db = Database::getInstance();
     }
 
+    public function getStatus($room_key){
+        $sql = 'SELECT status FROM notifications WHERE room_key = :room_key';
+        $stmt = $this->db->pdo->prepare($sql);
+        $stmt->bindParam(':room_key', $room_key);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_OBJ);
+        return $result->status;
+    }
+
     private function updateStatus($id, $status){
         $sql = 'UPDATE notifications SET status = :status WHERE id = :id';
         $stmt = $this->db->pdo->prepare($sql);
@@ -32,11 +41,15 @@ class Notifications
     }
 
     public function sendChallenge($for_user_id){
-        $sql = 'INSERT INTO notifications(for_user_id, from_user_id, timestamp) VALUES (:for_user_id, :from_user_id, CURRENT_TIMESTAMP)';
+        $room_key = sha1(microtime ());
+        $sql = 'INSERT INTO notifications(for_user_id, from_user_id, timestamp, room_key) VALUES (:for_user_id, :from_user_id, CURRENT_TIMESTAMP, :room_key)';
         $stmt = $this->db->pdo->prepare($sql);
         $stmt->bindParam(':for_user_id', $for_user_id);
         $stmt->bindParam(':from_user_id', $_SESSION['user_info']->id);
-        return $stmt->execute();
+        $stmt->bindParam(':room_key', $room_key);
+        if($stmt->execute()){
+            return $room_key;
+        }
     }
 
 

@@ -11,12 +11,9 @@ $(document).ready(function(){
             url: '../app/controllers/notificationController.php',
             data: {user_id: user_id, formname: formname}
         }).done(function(data){
-            console.log(data);
+            window.location.href = 'waiting_room.php?room_key='+data;
         });
     });
-
-
-
 
     function checkForNotification(){
         var user_id = $('#user_id').val();

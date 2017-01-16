@@ -33,6 +33,15 @@ switch($formname){
         break;
     case 'sendChallenge':
         if(!isset($_POST['user_id'])){die(false);}
-        die($notifications->sendChallenge($_POST['user_id']));
+        $room_key = $notifications->sendChallenge($_POST['user_id']);
+
+        die($room_key);
+        break;
+    case 'checkNotificationStatus':
+        if(!isset($_POST['room_key'])){
+            return false;
+        }
+
+        die($notifications->getStatus($_POST['room_key']));
         break;
 }
