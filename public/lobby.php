@@ -8,6 +8,14 @@
 require_once ('includes/header.php');
 $protect = new Protect();
 $protect->loggedInOnly();
+
+if(isset($_SESSION['team'])){
+    unset($_SESSION['team']);
+}
+
+if(isset($_SESSION['opposite_team'])){
+    unset($_SESSION['opposite_team']);
+}
 ?>
 <div class="container-fluid">
     <div class="alert alert-info notification" role="alert" style="display:none;">
@@ -47,59 +55,6 @@ $protect->loggedInOnly();
                             </ul>
                             <h3>Chat</h3>
                             <div class="chat-container clearfix">
-<!--                                <div class="chat-text-other">-->
-<!--                                    <div class="posted-by-container">-->
-<!--                                        <span class="posted-by">-->
-<!--                                        <a href="#">Eindbaas</a>-->
-<!--                                    </span>-->
-<!--                                        <span class="time-posted">-->
-<!--                                        (18:07)-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                    <p class="lead">-->
-<!--                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dignissimos earum eligendi eum fuga harum impedit iure magni molestiae mollitia, non officiis quisquam quod recusandae sed sunt tempora tenetur! Dolor?-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                                <div class="chat-text-other">-->
-<!--                                    <div class="posted-by-container">-->
-<!--                                        <span class="posted-by">-->
-<!--                                        <a href="#">Eindbaas</a>-->
-<!--                                    </span>-->
-<!--                                        <span class="time-posted">-->
-<!--                                        (18:07)-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                    <p class="lead">-->
-<!--                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dignissimos earum eligendi eum fuga harum impedit iure magni molestiae mollitia, non officiis quisquam quod recusandae sed sunt tempora tenetur! Dolor?-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                                <div class="chat-text-other">-->
-<!--                                    <div class="posted-by-container">-->
-<!--                                        <span class="posted-by">-->
-<!--                                        <a href="#">Eindbaas</a>-->
-<!--                                    </span>-->
-<!--                                        <span class="time-posted">-->
-<!--                                        (18:07)-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                    <p class="lead">-->
-<!--                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dignissimos earum eligendi eum fuga harum impedit iure magni molestiae mollitia, non officiis quisquam quod recusandae sed sunt tempora tenetur! Dolor?-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                                <div class="chat-text-self float-right clearfix">-->
-<!--                                    <div class="posted-by-container text-right">-->
-<!--                                        <span class="posted-by">-->
-<!--                                        <a href="#">You</a>-->
-<!--                                    </span>-->
-<!--                                        <span class="time-posted">-->
-<!--                                        (18:07)-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!---->
-<!--                                    <p class="lead">-->
-<!--                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dignissimos earum eligendi eum fuga harum impedit iure magni molestiae mollitia, non officiis quisquam quod recusandae sed sunt tempora tenetur! Dolor?-->
-<!--                                    </p>-->
-<!--                                </div>-->
                             </div>
                             <div class="text-input-container">
                                 <div class="input-group">

@@ -4,11 +4,15 @@
 $(document).ready(function(){
     
     $('.btn_ready').on('click', function(){
+        $('.pick_team_container').hide('slow');
+        $('.pick_team_container').html('<p class="lead"> Waiting for other player to get ready.</p>');
+        $('.pick_team_container').show('slow');
         var user_id = $(this).data('user_id');
+        var room_key = $(this).data('room_key');
         $.ajax({
             method: 'POST',
             url: '../app/controllers/battleRoomController.php',
-            data: { formname: 'setPlayerReady', user_id: user_id}
+            data: { formname: 'setPlayerReady', user_id: user_id, room_key: room_key}
         }).done(function(data){
             console.log(data);
         });

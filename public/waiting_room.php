@@ -14,7 +14,13 @@ if(!isset($_GET['room_key'])){
 }
 $room_key = $_GET['room_key'];
 $battle = new Battle();
-$battle->joinBattleRoom($_SESSION['user_info']->id, $room_key);
+$player = $battle->joinBattleRoom($_SESSION['user_info']->id, $room_key);
+
+if(!isset($_SESSION['player'])){
+    $_SESSION['player'] = '';
+}
+
+$_SESSION['player'] = $player;
 ?>
 <div class="container-fluid">
     <div class="row">

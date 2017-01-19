@@ -18,6 +18,7 @@ $room_key = $_GET['room_key'];
 if(!isset($_SESSION['team'])){
     $_SESSION['team'] = array();
 }
+
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -40,7 +41,7 @@ if(!isset($_SESSION['team'])){
                                     <?= $pokemon->getTeam($_SESSION['team']); ?>
                                 </div>
                             </div>
-                            <button class="btn btn-block btn-outline-success btn-lg btn_ready" data-user_id="<?= $_SESSION['user_info']->id; ?>">READY TO RUMBLEEE!</button>
+                            <button class="btn btn-block btn-outline-success btn-lg btn_ready" data-room_key="<?= $room_key; ?>" >READY TO RUMBLEEE!</button>
                         </div>
                     </div>
                 </div>
@@ -48,7 +49,7 @@ if(!isset($_SESSION['team'])){
         </div>
     </div>
 </div>
-
+<script src="assets/js/picking_teams.js"></script>
 <?php
 require_once ('includes/footer.php');
 ?>

@@ -9,5 +9,11 @@ var PokemonService = {
         return $.ajax({
             url: PokemonService.url + 'pokemon/' + pokemon
         });
+    },
+
+    getMove: function(url){
+        return $.ajax({
+            url: url
+        });
     }
 };
