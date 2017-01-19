@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21bb4e60-58b9-4357-9db1-b92d5753ea32" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/Database.php" afterPath="$PROJECT_DIR$/app/classes/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authController.php" afterPath="$PROJECT_DIR$/app/controllers/authController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/battle.js" afterPath="$PROJECT_DIR$/public/assets/js/battle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/battle.php" afterPath="$PROJECT_DIR$/public/battle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/login.php" afterPath="$PROJECT_DIR$/public/login.php" />
-    </list>
+    <list default="true" id="21bb4e60-58b9-4357-9db1-b92d5753ea32" name="Default" comment="" />
     <ignored path="pokemon.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -481,12 +473,12 @@
       <workItem from="1484562485955" duration="10520000" />
       <workItem from="1484585396582" duration="23130000" />
       <workItem from="1484641501249" duration="19910000" />
-      <workItem from="1484819306625" duration="39112000" />
+      <workItem from="1484819306625" duration="39220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92672000" />
+    <option name="totallyTimeSpent" value="92780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
