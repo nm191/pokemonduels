@@ -67,6 +67,9 @@ $(document).ready(function(){
                            }else{
                                $('.overlay').html('<div class="container text-sm-center"><h1 class="display-1"> You Won!</h1><p class="lead">Well done!</p><a class="btn btn-outline-primary" href="lobby.php">Go back to lobby</a></div>');
                            }
+                           $.ajax({
+                               
+                           });
                            $('.overlay').show('slow');
                        }
                        var val_max = bar.attr('aria-valuemax');

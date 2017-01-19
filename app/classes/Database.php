@@ -8,9 +8,9 @@
  */
 
 define('DBHOST', 'localhost');
-define('DBNAME', 'pokemon');
-define('DBUSER', 'root');
-define('DBPASS', '');
+define('DBNAME', 'silkmedi_pokemon');
+define('DBUSER', 'silkmedi_poke');
+define('DBPASS', 'XeU*UrrEHqye');
 
 class Database
 {

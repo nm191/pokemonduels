@@ -17,11 +17,11 @@ switch($formname){
 
         //check if all fields are filled
         $required_ar = array('email', 'username', 'password', 'password_confirm');
-        foreach($required_ar  as $field_name){
-           if(empty($POST[$field_name])){
-               die('Not all fields all filled in');
-           }
-        }
+//        foreach($required_ar  as $field_name){
+//           if(empty($POST[$field_name])){
+//               die('Not all fields all filled in');
+//           }
+//        }
 
         //check if email exists
         if($user->EmailExists($_POST['email'])){

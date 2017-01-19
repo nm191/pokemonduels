@@ -17,7 +17,7 @@
                     <hr class="my-4">
                     <p class="lead">
                         <a class="btn btn-outline-success btn-lg" href="login.php" role="button">Login</a>
-                        <a class="btn btn-outline-primary btn-lg" href="register.php" role="button">Register</a>
+<!--                        <a class="btn btn-outline-primary btn-lg" href="register.php" role="button">Register</a>-->
                     </p>
                 </div>
             </div>

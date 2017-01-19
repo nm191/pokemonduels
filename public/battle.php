@@ -27,7 +27,6 @@ if(!isset($_SESSION['opposite_team'])){
 }else{
     $opposite_team = $_SESSION['opposite_team'];
 }
-var_dump($_SESSION['player']);
 ?>
 <div class="overlay" style="display: none;">
 </div>

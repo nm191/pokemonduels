@@ -27,7 +27,7 @@ require_once ('includes/header.php');
                             <button class="btn btn-outline-success btn-block btn-lg login">Login</button>
                         </form>
                         <hr class="my-4">
-                        <p class="lead">No account? <a href="register.php">Click here</a> to register.</p>
+<!--                        <p class="lead">No account? <a href="register.php">Click here</a> to register.</p>-->
                     </div>
                 </div>
             </div>
