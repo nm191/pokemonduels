@@ -2,7 +2,6 @@
  * Created by Gebruiker on 16-1-2017.
  */
 $(document).ready(function(){
-
     function checkBattleRoomStatus(room_key){
         var formname = 'checkBattleRoomStatus';
         return $.ajax({

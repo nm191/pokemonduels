@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21bb4e60-58b9-4357-9db1-b92d5753ea32" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/classes/Battle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/battleRoomController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/waiting_room.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/waiting_room.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/classes/Pokemon.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/team_picking.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/Battle.php" afterPath="$PROJECT_DIR$/app/classes/Battle.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/classes/Notifications.php" afterPath="$PROJECT_DIR$/app/classes/Notifications.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/notificationController.php" afterPath="$PROJECT_DIR$/app/controllers/notificationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/notifications.js" afterPath="$PROJECT_DIR$/public/assets/js/notifications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/footer.php" afterPath="$PROJECT_DIR$/public/includes/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authController.php" afterPath="$PROJECT_DIR$/app/controllers/authController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/battleRoomController.php" afterPath="$PROJECT_DIR$/app/controllers/battleRoomController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/PokemonService.js" afterPath="$PROJECT_DIR$/public/assets/js/PokemonService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/register.js" afterPath="$PROJECT_DIR$/public/assets/js/register.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/script.js" afterPath="$PROJECT_DIR$/public/assets/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/waiting_room.js" afterPath="$PROJECT_DIR$/public/assets/js/waiting_room.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/styles/mainstyles.css" afterPath="$PROJECT_DIR$/public/assets/styles/mainstyles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/includes/header.php" afterPath="$PROJECT_DIR$/public/includes/header.php" />
     </list>
     <ignored path="pokemon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,85 +35,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lobby.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/lobby.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="122" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notifications.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/js/notifications.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#45#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/includes/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="154">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notificationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/notificationController.php">
+      <file leaf-file-name="Notifications.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/classes/Notifications.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="waiting_room.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/waiting_room.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="-440">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
-                <marker date="1484607503021" expanded="true" signature="399:939" ph="..." />
-                <marker date="1484607503021" expanded="true" signature="421:932" ph="..." />
-                <marker date="1484607503021" expanded="true" signature="453:921" ph="..." />
-                <marker date="1484607503021" expanded="true" signature="505:906" ph="..." />
-                <marker date="1484607503021" expanded="true" signature="551:887" ph="..." />
-                <marker date="1484607503021" expanded="true" signature="588:864" ph="..." />
-                <marker date="1484607503021" expanded="true" signature="636:837" ph="..." />
+                <marker date="1484753595221" expanded="true" signature="281:340" ph="SELECT statu... notifications" />
+                <marker date="1484753595221" expanded="true" signature="618:674" ph="UPDATE notif... " />
+                <marker date="1484753595221" expanded="true" signature="1134:1183" ph="SELECT room_... notifications" />
+                <marker date="1484753595221" expanded="true" signature="1491:1631" ph="INSERT INTO notifications... " />
+                <marker date="1484753595221" expanded="true" signature="2000:2225" ph="SELECT u.use... notifications" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Battle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/Battle.php">
+      <file leaf-file-name="team_picking.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/team_picking.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="39" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="39" />
+            <state relative-caret-position="598">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
-                <marker date="1484608854840" expanded="true" signature="738:862" ph="SELECT COUNT... " />
-                <marker date="1484608854840" expanded="true" signature="1188:1257" ph="SELECT COUNT... " />
-                <marker date="1484608854840" expanded="true" signature="1562:1585" ph="UPDATE battl... " />
-                <marker date="1484608854840" expanded="true" signature="1562:1586" ph="UPDATE battl... " />
-                <marker date="1484608854840" expanded="true" signature="1562:1605" ph="UPDATE battl... " />
-                <marker date="1484608854840" expanded="true" signature="1562:1606" ph="UPDATE battl... " />
-                <marker date="1484608854840" expanded="true" signature="1562:1647" ph="UPDATE battl... " />
-                <marker date="1484608854840" expanded="true" signature="1562:1648" ph="UPDATE battl... " />
-                <marker date="1484608854840" expanded="true" signature="1947:1972" ph="INSERT INTO battle_rooms... " />
-                <marker date="1484608854840" expanded="true" signature="1947:2027" ph="INSERT INTO battle_rooms... " />
-                <marker date="1484608854840" expanded="true" signature="2291:2349" ph="SELECT statu... battle_rooms" />
+                <element signature="e#6#85#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pokemon.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/classes/Pokemon.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-480">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PokemonService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/PokemonService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="battleRoomController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/battleRoomController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+              <folding>
+                <element signature="e#6#85#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,32 +108,18 @@
       <file leaf-file-name="waiting_room.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/js/waiting_room.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#45#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="66">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="battleRoomController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/battleRoomController.php">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/js/register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="44">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -151,21 +127,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notifications.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/classes/Notifications.php">
+      <file leaf-file-name="mainstyles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/styles/mainstyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="31" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="31" />
-              <folding>
-                <marker date="1484607019476" expanded="true" signature="277:336" ph="SELECT statu... notifications" />
-                <marker date="1484607019476" expanded="true" signature="614:670" ph="UPDATE notif... " />
-                <marker date="1484607019476" expanded="true" signature="1150:1232" ph="INSERT INTO notifications... " />
-                <marker date="1484607019476" expanded="true" signature="1150:1279" ph="INSERT INTO notifications... " />
-                <marker date="1484607019476" expanded="true" signature="1150:1290" ph="INSERT INTO notifications... " />
-                <marker date="1484607019476" expanded="true" signature="1659:1884" ph="SELECT u.use... notifications" />
-                <marker date="1484607019476" expanded="true" signature="2737:2799" ph="..." />
-                <marker date="1484607019476" expanded="true" signature="2779:2799" ph="{...}" />
-              </folding>
+            <state relative-caret-position="708">
+              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/includes/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,33 +163,35 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/assets/js/PokemonService.js" />
         <option value="$PROJECT_DIR$/app/classes/Database.php" />
         <option value="$PROJECT_DIR$/app/init.php" />
         <option value="$PROJECT_DIR$/public/assets/includes/header.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/public/assets/js/script.js" />
         <option value="$PROJECT_DIR$/public/login.php" />
         <option value="$PROJECT_DIR$/app/classes/Protect.php" />
-        <option value="$PROJECT_DIR$/public/includes/header.php" />
         <option value="$PROJECT_DIR$/app/controllers/chatController.php" />
         <option value="$PROJECT_DIR$/public/assets/js/chat.js" />
         <option value="$PROJECT_DIR$/app/classes/Chat.php" />
         <option value="$PROJECT_DIR$/public/register.php" />
-        <option value="$PROJECT_DIR$/public/assets/js/register.js" />
-        <option value="$PROJECT_DIR$/app/controllers/authController.php" />
         <option value="$PROJECT_DIR$/public/logout.php" />
-        <option value="$PROJECT_DIR$/public/assets/styles/mainstyles.css" />
         <option value="$PROJECT_DIR$/public/lobby.php" />
         <option value="$PROJECT_DIR$/app/classes/User.php" />
         <option value="$PROJECT_DIR$/app/controllers/notificationController.php" />
-        <option value="$PROJECT_DIR$/app/classes/Notifications.php" />
         <option value="$PROJECT_DIR$/public/assets/js/notifications.js" />
-        <option value="$PROJECT_DIR$/public/includes/footer.php" />
         <option value="$PROJECT_DIR$/public/waiting_room.php" />
-        <option value="$PROJECT_DIR$/public/assets/js/waiting_room.js" />
+        <option value="$PROJECT_DIR$/app/controllers/authController.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/register.js" />
         <option value="$PROJECT_DIR$/app/classes/Battle.php" />
+        <option value="$PROJECT_DIR$/public/includes/header.php" />
+        <option value="$PROJECT_DIR$/public/assets/styles/mainstyles.css" />
+        <option value="$PROJECT_DIR$/public/assets/js/PokemonService.js" />
+        <option value="$PROJECT_DIR$/app/classes/Pokemon.php" />
         <option value="$PROJECT_DIR$/app/controllers/battleRoomController.php" />
+        <option value="$PROJECT_DIR$/app/classes/Notifications.php" />
+        <option value="$PROJECT_DIR$/public/includes/footer.php" />
+        <option value="$PROJECT_DIR$/public/team_picking.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/waiting_room.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -224,10 +203,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -400,17 +379,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../js/documents/javascript_arrays.pdf" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -481,33 +461,34 @@
       <updated>1484562483222</updated>
       <workItem from="1484562485955" duration="10520000" />
       <workItem from="1484585396582" duration="23130000" />
+      <workItem from="1484641501249" duration="19910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33650000" />
+    <option name="totallyTimeSpent" value="53560000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17489271" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -526,6 +507,104 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/lobby.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2684">
+          <caret line="122" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/notificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/waiting_room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/Battle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="39" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="39" />
+          <folding>
+            <marker date="1484642136469" expanded="true" signature="749:873" ph="SELECT COUNT... " />
+            <marker date="1484642136469" expanded="true" signature="1199:1268" ph="SELECT COUNT... " />
+            <marker date="1484642136469" expanded="true" signature="1573:1658" ph="UPDATE battl... " />
+            <marker date="1484642136469" expanded="true" signature="1958:2038" ph="INSERT INTO battle_rooms... " />
+            <marker date="1484642136469" expanded="true" signature="2302:2360" ph="SELECT statu... battle_rooms" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/waiting_room.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/battleRoomController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/Notifications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="31" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <marker date="1484753595221" expanded="true" signature="281:340" ph="SELECT statu... notifications" />
+            <marker date="1484753595221" expanded="true" signature="618:674" ph="UPDATE notif... " />
+            <marker date="1484753595221" expanded="true" signature="1134:1183" ph="SELECT room_... notifications" />
+            <marker date="1484753595221" expanded="true" signature="1491:1631" ph="INSERT INTO notifications... " />
+            <marker date="1484753595221" expanded="true" signature="2000:2225" ph="SELECT u.use... notifications" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -572,9 +651,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +660,7 @@
         <state relative-caret-position="119">
           <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="e#6#85#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -601,7 +678,7 @@
         <state relative-caret-position="1054">
           <caret line="67" column="42" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="42" />
           <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="e#6#85#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -610,25 +687,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
           <caret line="98" column="39" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
-          <folding>
-            <marker date="1484603059931" expanded="true" signature="261:317" ph="SELECT COUNT... " />
-            <marker date="1484603059931" expanded="true" signature="586:648" ph="SELECT COUNT... " />
-            <marker date="1484603059931" expanded="true" signature="982:1063" ph="INSERT INTO users... " />
-            <marker date="1484603059931" expanded="true" signature="1468:1508" ph="SELECT * FRO... users" />
-            <marker date="1484603059931" expanded="true" signature="2138:2192" ph="UPDATE users... " />
-            <marker date="1484603059931" expanded="true" signature="2496:2563" ph="SELECT id, u... users" />
-            <marker date="1484603059931" expanded="true" signature="3711:3759" ph="UPDATE users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/PokemonService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -637,17 +696,7 @@
         <state relative-caret-position="286">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#7#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#7#86#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -684,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/chat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -707,7 +748,7 @@
         <state relative-caret-position="255">
           <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
+            <element signature="e#6#90#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -716,12 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="55" column="76" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
-          <folding>
-            <marker date="1484595264757" expanded="true" signature="314:352" ph="INSERT INTO chat_lines... " />
-            <marker date="1484595264757" expanded="true" signature="314:399" ph="INSERT INTO chat_lines... " />
-            <marker date="1484595264757" expanded="true" signature="803:1039" ph="SELECT cl.*,... chat_lines" />
-            <marker date="1484595264757" expanded="true" signature="803:1077" ph="SELECT cl.*,... chat_lines" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -733,31 +769,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/authController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="e#6#85#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/styles/mainstyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,39 +783,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-          <folding>
-            <marker date="1484603059931" expanded="true" signature="261:317" ph="SELECT COUNT... " />
-            <marker date="1484603059931" expanded="true" signature="586:648" ph="SELECT COUNT... " />
-            <marker date="1484603059931" expanded="true" signature="982:1063" ph="INSERT INTO users... " />
-            <marker date="1484603059931" expanded="true" signature="1468:1508" ph="SELECT * FRO... users" />
-            <marker date="1484603059931" expanded="true" signature="2138:2192" ph="UPDATE users... " />
-            <marker date="1484603059931" expanded="true" signature="2496:2563" ph="SELECT id, u... users" />
-            <marker date="1484603059931" expanded="true" signature="3711:3759" ph="UPDATE users... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lobby.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
+        <state relative-caret-position="2684">
           <caret line="122" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/authController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#6#85#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/includes/footer.php">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/Battle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <marker date="1484642136469" expanded="true" signature="749:873" ph="SELECT COUNT... " />
+            <marker date="1484642136469" expanded="true" signature="1199:1268" ph="SELECT COUNT... " />
+            <marker date="1484642136469" expanded="true" signature="1573:1658" ph="UPDATE battl... " />
+            <marker date="1484642136469" expanded="true" signature="1958:2038" ph="INSERT INTO battle_rooms... " />
+            <marker date="1484642136469" expanded="true" signature="2302:2360" ph="SELECT statu... battle_rooms" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/notifications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="308">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="false" />
@@ -805,56 +839,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/Notifications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="31" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <marker date="1484607019476" expanded="true" signature="277:336" ph="SELECT statu... notifications" />
-            <marker date="1484607019476" expanded="true" signature="614:670" ph="UPDATE notif... " />
-            <marker date="1484607019476" expanded="true" signature="1150:1232" ph="INSERT INTO notifications... " />
-            <marker date="1484607019476" expanded="true" signature="1150:1279" ph="INSERT INTO notifications... " />
-            <marker date="1484607019476" expanded="true" signature="1150:1290" ph="INSERT INTO notifications... " />
-            <marker date="1484607019476" expanded="true" signature="1659:1884" ph="SELECT u.use... notifications" />
-            <marker date="1484607019476" expanded="true" signature="2737:2799" ph="..." />
-            <marker date="1484607019476" expanded="true" signature="2779:2799" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/Battle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="39" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="39" />
-          <folding>
-            <marker date="1484608854840" expanded="true" signature="738:862" ph="SELECT COUNT... " />
-            <marker date="1484608854840" expanded="true" signature="1188:1257" ph="SELECT COUNT... " />
-            <marker date="1484608854840" expanded="true" signature="1562:1585" ph="UPDATE battl... " />
-            <marker date="1484608854840" expanded="true" signature="1562:1586" ph="UPDATE battl... " />
-            <marker date="1484608854840" expanded="true" signature="1562:1605" ph="UPDATE battl... " />
-            <marker date="1484608854840" expanded="true" signature="1562:1606" ph="UPDATE battl... " />
-            <marker date="1484608854840" expanded="true" signature="1562:1647" ph="UPDATE battl... " />
-            <marker date="1484608854840" expanded="true" signature="1562:1648" ph="UPDATE battl... " />
-            <marker date="1484608854840" expanded="true" signature="1947:1972" ph="INSERT INTO battle_rooms... " />
-            <marker date="1484608854840" expanded="true" signature="1947:2027" ph="INSERT INTO battle_rooms... " />
-            <marker date="1484608854840" expanded="true" signature="2291:2349" ph="SELECT statu... battle_rooms" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/notificationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="-77">
           <caret line="11" column="1" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
@@ -862,36 +849,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/waiting_room.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="704">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="37" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/styles/mainstyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../js/ajax/sandbox/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../js/jquery/1/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/PokemonService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/Notifications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
-            <marker date="1484607503021" expanded="true" signature="399:939" ph="..." />
-            <marker date="1484607503021" expanded="true" signature="421:932" ph="..." />
-            <marker date="1484607503021" expanded="true" signature="453:921" ph="..." />
-            <marker date="1484607503021" expanded="true" signature="505:906" ph="..." />
-            <marker date="1484607503021" expanded="true" signature="551:887" ph="..." />
-            <marker date="1484607503021" expanded="true" signature="588:864" ph="..." />
-            <marker date="1484607503021" expanded="true" signature="636:837" ph="..." />
+            <marker date="1484753595221" expanded="true" signature="281:340" ph="SELECT statu... notifications" />
+            <marker date="1484753595221" expanded="true" signature="618:674" ph="UPDATE notif... " />
+            <marker date="1484753595221" expanded="true" signature="1134:1183" ph="SELECT room_... notifications" />
+            <marker date="1484753595221" expanded="true" signature="1491:1631" ph="INSERT INTO notifications... " />
+            <marker date="1484753595221" expanded="true" signature="2000:2225" ph="SELECT u.use... notifications" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/Pokemon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/battleRoomController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/team_picking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/waiting_room.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="66">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/battleRoomController.php">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+        <state relative-caret-position="44">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>

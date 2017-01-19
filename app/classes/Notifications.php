@@ -2,7 +2,7 @@
 
 /**
  * Created by PhpStorm.
- * User: Gebruiker
+ * User: Nick van Meel
  * Date: 16-1-2017
  * Time: 21:12
  */
@@ -36,8 +36,17 @@ class Notifications
     }
 
     public function acceptChallenge($id){
-        return $this->updateStatus($id, 'accepted');
+        $this->updateStatus($id, 'accepted');
+        return $this->getRoomKey($id);
+    }
 
+    private function getRoomKey($id){
+        $sql = 'SELECT room_key FROM notifications WHERE id = :id';
+        $stmt = $this->db->pdo->prepare($sql);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_OBJ);
+        return $result->room_key;
     }
 
     public function sendChallenge($for_user_id){
@@ -90,6 +99,7 @@ class Notifications
                         data: {id: id, formname: formname}
                     }).done(function(data){
                         $('.notification').hide('slow');
+
                     });
                 });
 
@@ -100,8 +110,9 @@ class Notifications
                         method: 'POST',
                         url: '../app/controllers/notificationController.php',
                         data: {id: id, formname: formname}
-                    }).done(function(data){
+                    }).done(function(room_key){
                         $('.notification').hide('slow');
+                        window.location.href = 'waiting_room.php?room_key='+room_key;
                     });
                 });
             });

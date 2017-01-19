@@ -17,7 +17,7 @@ switch($formname){
 
         //check if all fields are filled
         $required_ar = array('email', 'username', 'password', 'password_confirm');
-        foreach($required_ar  as &$field_name){
+        foreach($required_ar  as $field_name){
            if(empty($POST[$field_name])){
                die('Not all fields all filled in');
            }

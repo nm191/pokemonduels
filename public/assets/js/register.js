@@ -10,7 +10,6 @@ $(document).ready(function(){
         var password_confirm = $('#txtPasswordConfirm').val();
         var hidden_formname  = $('#hidden_formname').val();
 
-        console.log(username);
         $.ajax({
             method: 'POST',
             url: '../app/controllers/authController.php',

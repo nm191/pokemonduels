@@ -18,8 +18,9 @@ class Battle
         if($this->alreadyJoinedBattleRoom($user_id, $room_key)){
             return false;
         }elseif ($this->battleRoomExists($room_key)){
-            return $this->updateBattleRoom($room_key, 'player_id_2', $user_id);
-            return $this->updateBattleRoom($room_key, 'status', 'picking teams');
+            $this->updateBattleRoom($room_key, 'player_id_2', $user_id);
+            $this->updateBattleRoom($room_key, 'status', 'picking teams');
+            return true;
         }
 
         return $this->createBattleRoom($room_key, $user_id);
