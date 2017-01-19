@@ -20,6 +20,10 @@ switch($formname){
         if(!isset($_POST['room_key'])){die();}
         die($battle->getBattleRoomStatus($_POST['room_key']));
         break;
+    case 'setBattleRoomOver':
+        if(!isset($_POST['room_key'])){die();}
+        die($battle->updateBattleRoom($_POST['room_key'], 'status', 'over'));
+        break;
     case 'getPokemonOutput':
         if(!isset($_POST['pokemon'])){
             die();

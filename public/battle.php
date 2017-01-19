@@ -11,10 +11,17 @@ $protect = new Protect();
 $protect->loggedInOnly();
 $pokemon = new Pokemon();
 $battle = new Battle();
+
 if(!isset($_GET['room_key'])){
     $user->redirect('lobby.php');
 }
 $room_key = $_GET['room_key'];
+
+$status = $battle->getBattleRoomStatus($room_key);
+if($status == 'over'){
+    $user->redirect('lobby.php');
+    die();
+}
 
 if(!isset($_SESSION['team'])){
     $_SESSION['team'] = array();

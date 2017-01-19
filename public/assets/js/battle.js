@@ -68,9 +68,13 @@ $(document).ready(function(){
                                $('.overlay').html('<div class="container text-sm-center"><h1 class="display-1"> You Won!</h1><p class="lead">Well done!</p><a class="btn btn-outline-primary" href="lobby.php">Go back to lobby</a></div>');
                            }
                            $.ajax({
-                               
+                               url: '../app/controller/battleRoomController.php',
+                               method: 'POST',
+                               data: {room_key: room_key, formname: 'setBattleRoomOver'}
+                           }).done(function(){
+                               $('.overlay').show('slow');
                            });
-                           $('.overlay').show('slow');
+
                        }
                        var val_max = bar.attr('aria-valuemax');
                        var width  = val_now / (val_max / 100);
