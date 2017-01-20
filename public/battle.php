@@ -45,6 +45,7 @@ if(!isset($_SESSION['opposite_team'])){
                     <div class="row">
                         <div class="col-sm-12 opposite_player <?= ($_SESSION['player'] == 'player_1' ? 'player_2' : 'player_1'); ?>">
                             <div class="battle_pokemon float-right clearfix">
+                                <span class="float-right pokemon-name"><?=$opposite_team[0]->name;?></span>
                                 <div class="progress float-right">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="<?= $pokemon->getHP($opposite_team[0])?>" aria-valuemin="0" aria-valuemax=" <?= $pokemon->getHP($opposite_team[0])?>"><span class="current_hp"><?= $pokemon->getHP($opposite_team[0])?></span>/<?= $pokemon->getHP($opposite_team[0])?></div>
                                 </div>
@@ -55,6 +56,7 @@ if(!isset($_SESSION['opposite_team'])){
                     <div class="row">
                         <div class="col-sm-12 this_player <?= $_SESSION['player']; ?>">
                             <div class="battle_pokemon">
+                                <span><?=$team[0]->name;?></span>
                                 <div class="progress">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="<?= $pokemon->getHP($team[0])?>" aria-valuemin="0" aria-valuemax=" <?= $pokemon->getHP($team[0])?>"><span class="current_hp"><?= $pokemon->getHP($team[0])?></span>/<?= $pokemon->getHP($team[0])?></div>
                                 </div>

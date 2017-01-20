@@ -4,9 +4,8 @@
 $(document).ready(function(){
     
     $('.btn_ready').on('click', function(){
-        $('.pick_team_container').hide('slow');
-        $('.pick_team_container').html('<p class="lead"> Waiting for other player to get ready.</p>');
-        $('.pick_team_container').show('slow');
+        $('.overlay').html('<p class="lead"> <i class="fa fa-spinner fa-2x" aria-hidden="true"></i> Waiting for other player to get ready.</p>');
+        $('.overlay').show('slow');
         var user_id = $(this).data('user_id');
         var room_key = $(this).data('room_key');
         $.ajax({
@@ -29,6 +28,7 @@ $(document).ready(function(){
                url: '../app/controllers/battleRoomController.php',
                data: {pokemon: jsonString, formname: 'getPokemonOutput'}
            }).done(function(output){
+               $('.overlay').hide('slow');
                $('.pokemon-result').hide('slow');
                $('.pokemon-result').html(output);
                $('.pokemon-result').show('slow');

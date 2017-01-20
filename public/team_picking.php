@@ -20,6 +20,9 @@ if(!isset($_SESSION['team'])){
 }
 
 ?>
+<div class="overlay" style="display: none;">
+    <p class="lead"> <i class="fa fa-spinner fa-2x" aria-hidden="true"></i> Waiting for other player to get ready.</p>
+</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">

@@ -3,7 +3,7 @@
     display: block;
 }
 .chat-container{
-    height: 500px;
+    height: 420px;
     overflow-y: scroll;
 }
 
@@ -52,6 +52,7 @@ body{
 }
 .battle_pokemon img{
     width: 40%;
+    position: relative;
 }
 
 .battle_moves{
@@ -75,4 +76,24 @@ body{
     top: 0;
     left: 0;
     z-index: 10000;
+}
+
+.overlay p.lead{
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 50%;
+    margin: 25% auto;
+    text-align: center;
+}
+
+.pokemon-name{
+    width: 61%;
+}
+
+.challenge{
+    cursor: pointer;
+}
+.challenge:hover{
+    text-decoration: underline;
 }

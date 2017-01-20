@@ -55,10 +55,14 @@ $(document).ready(function(){
                        if(player.hasClass('this_player')){
                            var bar = $('.this_player .battle_pokemon .progress .progress-bar');
                            var hp = $('.this_player .battle_pokemon .progress .progress-bar .current_hp');
+                           $(".opposite_player .battle_pokemon img").animate({ "right": "142%" }, "fast" );
+                           $(".this_player .battle_pokemon img").effect('pulsate');
                            this_player = true;
                        }else{
                            var bar = $('.opposite_player .battle_pokemon .progress .progress-bar');
                            var hp = $('.opposite_player .battle_pokemon .progress .progress-bar .current_hp');
+                           $(".this_player .battle_pokemon img").animate({ "left": "142%" }, "fast" );
+                           $(".opposite_player .battle_pokemon img").effect('pulsate');
                        }
                        var val_now = bar.attr('aria-valuenow')-data[1];
                        if(val_now <= 0){
@@ -81,6 +85,8 @@ $(document).ready(function(){
                        bar.width(width+'%');
                        bar.attr('aria-valuenow', val_now);
                        hp.html(val_now);
+                       $(".this_player .battle_pokemon img").animate({ "left": "0%" }, "fast" );
+                       $(".opposite_player .battle_pokemon img").animate({ "right": "0%" }, "fast" );
                    }
 
                });
@@ -101,6 +107,6 @@ $(document).ready(function(){
     setInterval(function(){
         var room_key = getParameterByName('room_key');
         checkBattleRoomStatus(room_key);
-    }, 5000);
+    }, 1000);
 
 });

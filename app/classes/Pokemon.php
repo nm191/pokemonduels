@@ -140,6 +140,8 @@ class Pokemon
                 });
 
                 $('.pick_pokemon').on('click', function(){
+                    $('.overlay').html('<p class="lead"><i class="fa fa-spinner fa-2x" aria-hidden="true"></i> Selecting Pokemon</p>');
+                    $('.overlay').show('slow');
                     PokemonService.getPokemon($(this).data('pokemon_id')).done(function(data){
                         var jsonString = JSON.stringify(data);
                         if(PokemonService.team.length < 5){
@@ -148,6 +150,7 @@ class Pokemon
                                 url: '../app/controllers/battleRoomController.php',
                                 data: { formname: 'getTeam', pokemon: jsonString}
                             }).done(function(team_output){
+                                $('.overlay').hide('slow');
                                 $('.pokemons').html(team_output);
                             });
                         }else{

@@ -10,9 +10,9 @@ $(document).ready(function(){
             data: {room_key: room_key, formname: formname}
         }).done(function(status){
             if(status == 'in battle'){
-                $('.lead').toggle('slow');
-                $('.lead').html('Both players are ready... Preparing battle arena...');
-                $('.lead').toggle('slow');
+                $('.overlay .lead').toggle('slow');
+                $('.overlay .lead').html('Both players are ready... Preparing battle arena...');
+                $('.overlay .lead').toggle('slow');
                 setTimeout(function(){
                     window.location.href = 'battle.php?room_key='+room_key;
                 }, 3000);
