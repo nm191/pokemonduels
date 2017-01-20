@@ -66,7 +66,7 @@ class Pokemon
     }
 
     public function doMove($move, $pokemon, $team){
-        $hp  = ($this->getHP($pokemon) - $move->power) / 10 ;
+        $hp  = ($this->getHP($pokemon) - $move->power) / 5 ;
         $field_name = 'move_done_by_'.$_SESSION['player'];
         if($team == 'team'){
             $this->setHP($pokemon, $hp, $team);

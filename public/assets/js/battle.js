@@ -107,6 +107,6 @@ $(document).ready(function(){
     setInterval(function(){
         var room_key = getParameterByName('room_key');
         checkBattleRoomStatus(room_key);
-    }, 1000);
+    }, 2000);
 
 });
